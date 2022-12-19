@@ -17,6 +17,5 @@ Create an empty PostgreSQL database and then initialise tables using the supplie
 Set environment and run the server from main directory:
 
 ```
-DATABASE_URL="postgresql://user:password@host:port/database"
-cargo run
+DATABASE_URL='postgresql://user:password@host:port/database' cargo run
 ```
