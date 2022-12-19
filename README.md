@@ -4,7 +4,8 @@ Backend implementation for raiteilla.fi
 
 ## Dependencies
 
-Rust.
+* PostgreSQL
+* Rust
 
 ## Installing
 
