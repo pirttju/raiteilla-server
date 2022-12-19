@@ -48,7 +48,7 @@ async fn main() {
         .layer(cors)
         .layer(Extension(pool));
 
-    let addr = std::net::SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = std::net::SocketAddr::from(([0, 0, 0, 0], 3000));
     tracing::debug!("listening on {}", addr);
     axum::Server::bind(&addr)
         .serve(app.into_make_service())
