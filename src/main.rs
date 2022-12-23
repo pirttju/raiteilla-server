@@ -41,6 +41,10 @@ async fn main() {
 
     let app = Router::new()
         .route("/", get(controllers::info::route_info))
+        .route("/station", get(controllers::station::post_station))
+        .route("/station/:id", get(controllers::station::get_station))
+        .route("/train", post(controllers::train::post_train))
+        .route("/train/:id", get(controllers::train::get_train))
         .route("/login", post(controllers::auth::login))
         .route("/register", post(controllers::auth::register))
         //only loggedin user can access this route
